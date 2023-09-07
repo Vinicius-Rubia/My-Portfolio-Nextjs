@@ -4,7 +4,8 @@
 // const resend = new Resend(process.env.RESEND_API_KEY);
 // const fromEmail = process.env.FROM_EMAIL;
 
-// export async function POST(req: any, res: any) {
+export async function POST(req: any, res: any) {
+    const email = req.body.email;
 //   const { body } = await req.json();
 //   const { email, subject, message } = body;
 //   console.log(body);
@@ -27,4 +28,4 @@
 //   } catch (error) {
 //     return NextResponse.json({ error });
 //   }
-// }
+}
