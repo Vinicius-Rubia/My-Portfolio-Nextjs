@@ -40,7 +40,10 @@ export const HeroSection: React.FC = () => {
             Nos bastidores do código, encontro a poesia da tecnologia.
           </p>
           <div className="grid min-[425px]:flex items-center">
-            <Link href="#contact" className="px-6 py-3 w-full h-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:from-secondary-500 hover:via-primary-500 hover:to-blue-500 text-white">
+            <Link
+              href="#contact"
+              className="px-6 py-3 w-full h-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:from-secondary-500 hover:via-primary-500 hover:to-blue-500 text-white"
+            >
               Fale comigo
             </Link>
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3 min-[425px]:mt-0">
@@ -53,7 +56,9 @@ export const HeroSection: React.FC = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }} className="col-span-4 place-self-center mt-4 lg:mt-0">
+          transition={{ duration: 0.5 }}
+          className="col-span-4 place-self-center mt-4 lg:mt-0"
+        >
           <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative overflow-hidden mt-5 md:mt-0">
             <Image
               src="/images/hero-image.png"
@@ -65,7 +70,9 @@ export const HeroSection: React.FC = () => {
           </div>
         </motion.div>
       </div>
-      <p className="text-[#ADB7BE] text-base text-center sm:text-lg mb-6 lg:text-xl pt-20 max-w-[1200px] mx-auto">"Na imensidão do código, encontro a reflexão da complexidade humana, onde cada linha é um pensamento, cada função uma decisão e cada projeto uma jornada rumo ao infinito da inovação."</p>
+      <p className="text-[#ADB7BE] text-base text-center sm:text-lg mb-6 lg:text-xl pt-20 max-w-[1200px] mx-auto">
+        {"Na imensidão do código, encontro a reflexão da complexidade humana, onde cada linha é um pensamento, cada função uma decisão e cada projeto uma jornada rumo ao infinito da inovação."}
+      </p>
     </section>
   );
 };
