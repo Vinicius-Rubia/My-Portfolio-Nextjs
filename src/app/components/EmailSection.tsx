@@ -1,40 +1,40 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Link from "next/link";
 import { BsGithub, BsLinkedin, BsWhatsapp } from "react-icons/bs";
 import Image from "next/image";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 
 export const EmailSection: React.FC = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
+  // const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-  const handleSubmit = async (e: any) => {
-    e.preventDefault();
-    const data = {
-      email: e.target.email.value,
-      subject: e.target.subject.value,
-      message: e.target.message.value,
-    };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "api/email";
+  // const handleSubmit = async (e: any) => {
+  //   e.preventDefault();
+  //   const data = {
+  //     email: e.target.email.value,
+  //     subject: e.target.subject.value,
+  //     message: e.target.message.value,
+  //   };
+  //   const JSONdata = JSON.stringify(data);
+  //   const endpoint = "api/email";
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+  //   const options = {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSONdata,
+  //   };
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-    console.log(resData);
+  //   const response = await fetch(endpoint, options);
+  //   const resData = await response.json();
+  //   console.log(resData);
 
-    if (response.status === 200) {
-      console.log("Mensagem enviada.");
-      setEmailSubmitted(true);
-    }
-  };
+  //   if (response.status === 200) {
+  //     console.log("Mensagem enviada.");
+  //     setEmailSubmitted(true);
+  //   }
+  // };
 
   return (
     <section
